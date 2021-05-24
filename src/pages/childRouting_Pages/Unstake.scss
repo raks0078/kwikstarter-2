@@ -1,0 +1,88 @@
+* {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  
+    .stake {
+      margin-top: 1rem;
+      h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+  
+      .stackIcons {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 3rem;
+  
+        .iconBox {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+  
+          .icon {
+            background-color: #008cd0;
+            border-radius: 50%;
+            padding: 0.6rem;
+          }
+        }
+  
+        @media (max-width: 420px) {
+          width: 100%;
+  
+          h4 {
+            font-size: 0.5rem;
+          }
+        }
+      }
+  
+      .warning_Box {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        background-color: #262c43;
+        border-radius: 20px;
+        padding: 1rem;
+  
+        .warning_Icon {
+          font-size: 10rem;
+          flex: 0.4;
+        }
+        p {
+          flex: 0.6;
+        }
+        @media (max-width: 420px) {
+          flex-direction: column;
+        }
+      }
+  
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 1rem;
+        width: 260px;
+  
+        Button {
+          border-radius: 20px !important;
+          background-color: #008cd0 !important;
+          font-size: 0.7rem;
+          width: 110px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+      }
+    }
+  }
+  

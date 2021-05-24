@@ -1,0 +1,128 @@
+.projectCard {
+  width: 40%;
+  background-color: #212121;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  .cardHeader {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 1rem;
+    align-content: center;
+    justify-content: center;
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 80px;
+      }
+    }
+
+    .headerInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      h1 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+      }
+      .buds {
+        font-size: 0.8rem;
+        background-color: #56481d;
+        border-radius: 12px;
+        padding: 5px 9px;
+        width: 65px;
+        text-align: center;
+      }
+      .links {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+
+        .socialLink {
+          background-color: #383838;
+          border-radius: 50%;
+          padding: 0.2rem 0.5rem;
+        }
+      }
+
+      .status {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 125px;
+        background-color: #56481d;
+        border-radius: 14px;
+        padding: 4px 7px;
+        margin: 10px 0;
+        .dot {
+          background-color: #f1b90c;
+          border-radius: 50%;
+          width: 10px;
+          height: 10px;
+          margin-left: 2px;
+        }
+        h4 {
+          font-size: 0.8rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .cardInfo {
+    .moreInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a p {
+        color: #a57e07 !important;
+        font-size: 3rem;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          margin: 0;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+        p {
+          margin: 0;
+          font-size: 0.7rem;
+          color: #899999;
+        }
+      }
+    }
+
+    .progressBar {
+      margin-top: 1rem;
+      p {
+        margin: 0;
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: #899999;
+        margin-bottom: 4px;
+      }
+      .bar {
+        background-color: #ffffff;
+        border-radius: 5px;
+        height: 10px;
+      }
+      .percentage {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h4 {
+          font-size: 0.8rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+* {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+
+  .navigations {
+    display: flex;
+    justify-content: space-between;
+    .nav {
+      h4 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .kickStater_Info {
+    display: flex;
+    justify-content: space-between;
+
+    .info_box {
+      background-color: #101428;
+      border-radius: 17px;
+      padding: 0.5rem;
+      width: 30%;
+
+      h4 {
+        text-align: center;
+      }
+      @media (max-width: 500px) {
+        width: 90%;
+        margin-bottom: 1rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+  }
+
+  .right_Info {
+    .input_box {
+      background-color: #101428;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border-radius: 18px;
+      padding: 0.7rem;
+
+      h4 {
+        font-size: 0.9rem;
+      }
+
+      input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: whitesmoke;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        Button {
+          border-radius: 20px !important;
+          background-color: #008cd0 !important;
+          font-size: 0.8rem;
+          width: 110px;
+        }
+      }
+    }
+  }
+}
