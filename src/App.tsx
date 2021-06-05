@@ -43,7 +43,7 @@ const App = () => {
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
           <GlobalStyle />
           <StyledDiv>
-            <Router>
+            {/* <Router> */}
               <Particles params={particlesParams} />
               <div
                 className="wrapper"
@@ -59,9 +59,15 @@ const App = () => {
                   <Route exact path="/" component={() => <Homepage />} />
                   <Route
                     exact
+                    path="/featured-pool-next/:id"
+                    component={() => <FeaturedPoolNext />}
+                  />
+                  <Route
+                    exact
                     path="/featured-pool-next"
                     component={() => <FeaturedPoolNext />}
                   />
+
                   <Route
                     exact
                     path="/litepaper"
@@ -77,7 +83,7 @@ const App = () => {
                 <Web3Modal />
                 <Footer />
               </div>
-            </Router>
+            {/* </Router> */}
           </StyledDiv>
         </ThemeProvider>
       </Web3ReactProvider>

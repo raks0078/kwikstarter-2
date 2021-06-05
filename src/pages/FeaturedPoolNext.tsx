@@ -10,9 +10,24 @@ import "./FeaturePollNext.scss";
 import kwikstarter from "../assests/images/kwikstarter-transparent.png";
 import psp from "../images/psp.jpeg";
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useParams
+} from "react-router-dom";
+
 
 class FeaturedPoolNext extends Component {
+  // constructor(props:any) {
+  //   super(props); 
+    // this.state = {
+    //     instructorID : props.match.params.id
+    // };
+  // }
   render() {
+    
+    console.log('as',this.props);
     return (
       <div className="featuredpoolnext">
         <div className="container">
@@ -27,6 +42,7 @@ class FeaturedPoolNext extends Component {
                   </span>
                 </div>
                 <small>Listing: June 11, 2021 </small>
+                {/* <small>{this.props.match.params.id}</small> */}
               </div>
               <div className="d-flex align-items-center justify-content-between">
                 <div className="total-text">
@@ -255,14 +271,14 @@ class FeaturedPoolNext extends Component {
               </div>
             </div>
             <div className="d-flex">
-              <a href="javascript:void(0)">
+              <a href="https://drive.google.com/file/d/1dCCl-69PeOtqJyrEQzlAeDpGYWngMm9b/view?usp=sharing">
                 https://kwikstarter.finance/RD-Audit-v2.pdf
               </a>
             </div>
           </div>
           <div className="disclaimer">
             <div className="heading">Disclaimer</div>
-            <p>
+            <p> 
               The Kwikstarter team does not endorse, support or otherwise
               perform any due diligence on the projects listed on its platform.
               As always, please DO YOUR OWN RESEARCH before investing any of

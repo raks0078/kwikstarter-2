@@ -26,9 +26,13 @@ import rocketfour from "../images/FINAL-ROCKETS-04.svg";
 import rocketfive from "../images/FINAL-ROCKETS-05.svg";
 import rocketsix from "../images/FINAL-ROCKETS-06.svg";
 import linebackground from "../images/lines-bg.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+
 import "./Homepage.scss";
-class Homepage extends Component {
+
+class Homepage extends Component{
+
+
   render() {
     return (
       <div className="homepage">
@@ -48,14 +52,10 @@ class Homepage extends Component {
                 Kwikswap DEX!
               </h5>
               <span className="mt-4">
-                <a
-                  href="https://kwikstarter.org"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="custom-btn button-secondary"
-                >
-                  View All Projects
-                </a>
+              <Link to="/projects"
+                  className="custom-btn button-secondary">
+                View All Projects
+              </Link>
                 <a
                   href="https://app.kwikswap.org"
                   target="_blank"
@@ -89,8 +89,9 @@ class Homepage extends Component {
               <Link to="/projects">
               <button className="button-primary">View All Projects</button>
               </Link>
-                
-                <button className="button-secondary">Learn More</button>
+              <Link to="/litepaper">
+              <button className="button-secondary">Learn More</button>
+              </Link>
               </div>
             </div>
             <div className="wrap-img">
@@ -118,7 +119,7 @@ class Homepage extends Component {
                     launchpad on offer!
                     <br />
                     <br />
-                    Our model ensure that anyone who whitelists in the specified
+                    Our model ensures that anyone who whitelists in the specified
                     time *launch window* will receive a token allocation on
                     Kwikstarter.
                   </h5>
@@ -176,7 +177,7 @@ class Homepage extends Component {
             <div className="heading">Upcoming Pools</div>
             <div className="d-flex flex-wrap mt-5">
             {/* <Link to="/featured-pool-next"> */}
-            <Link to="/featured-pool-next" className="card">
+            <Link to="/featured-pool-next/polka" className="card newcard">
                 <div className="square-box">
                   <img src={psp} />
                   Polkasocial
@@ -192,7 +193,7 @@ class Homepage extends Component {
                       <span>$150k</span>
                     </li>
                     <li>
-                      <small>Max Allocation</small>
+                      <small>Max Allocation</small>z
                       <span>$600k</span>
                     </li>
                     <li>
@@ -211,13 +212,13 @@ class Homepage extends Component {
                   >
                     <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                   </svg>
-                  open on the 11 June
+                  OPEN ON THE 11 JUNE
                 </div>
               </Link>
             {/* </Link> */}
 
             {/* <Link to="/featured-pool-next"> */}
-            <Link to="/featured-pool-next" className="card">
+            <Link to="/featured-pool-next/veb" className="card">
                 <div className="square-box">
                   <img src={kwikstarter} />
                   TBA
@@ -813,7 +814,9 @@ class Homepage extends Component {
                           </div>
                         </div>
                       </div>
+                      <Link to="/staking">
                       <button className="time-limit">Stake Now</button>
+                      </Link>
                     </div>
                   </li>
                 </ul>

@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
+import "./Project.scss";
 
 export default function Projects() {
   return (

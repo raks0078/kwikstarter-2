@@ -3,7 +3,11 @@
   background-color: #212121;
   padding: 1rem;
   border-radius: 1rem;
-
+  @media (max-width: 420px) {
+    width: 94%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
   .cardHeader {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -53,7 +57,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 125px;
+        width: 165px;
         background-color: #56481d;
         border-radius: 14px;
         padding: 4px 7px;
@@ -66,8 +70,16 @@
           margin-left: 2px;
         }
         h4 {
-          font-size: 0.8rem;
+          font-size: 0.75rem;
           margin: 0;
+        }
+
+        @media (max-width: 420px) {
+          width: 165px;
+          h4 {
+            font-size: 0.7rem;
+            margin: 0;
+          }
         }
       }
     }

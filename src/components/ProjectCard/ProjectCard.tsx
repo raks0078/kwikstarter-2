@@ -31,17 +31,17 @@ function ProjectCard() {
           </div>
           <div className="status">
             <div className="dot"></div>
-            <h4>Opens in 11 June</h4>
+            <h4>Open on the 11th June</h4>
           </div>
           <h4 className="buds">BNB</h4>
         </div>
       </div>
       <div className="cardInfo">
-        <p>
+        {/* <p>
           A full service #NFT & DeFi platform that tokenizes, launches and
           trades intellectual property rights from Arts and Inventions.
-        </p>
-        <Link to="/featured-pool-next"><p>Learn More</p></Link>
+        </p> */}
+        <Link to="/litepaper"><p>Learn More</p></Link>
         <div className="moreInfo">
           <div className="info">
             <p>Swap Rate</p>

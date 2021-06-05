@@ -1,0 +1,20 @@
+* {
+  h1 {
+    text-align: center;
+    @media (max-width: 420px) {
+      font-size: 1.5rem;
+    }
+  }
+}
+.container {
+  .projectsOpen {
+    h1 {
+      margin-bottom: 1rem;
+    }
+    .ProjectCard {
+      @media (max-width: 420px) {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
