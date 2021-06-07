@@ -60,12 +60,12 @@ function Staking() {
                         <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
                             <div className="kickStater_Info">
                                 <div className="info_box">
-                                    <h4>Number of stackers</h4>
+                                    <h4>Number of stakers</h4>
                                     <hr/>
                                     <h4>0</h4>
                                 </div>
                                 <div className="info_box">
-                                    <h4>Total KickStater Staked</h4>
+                                    <h4>Kwikswap staked</h4>
                                     <hr/>
                                     <h4>0</h4>
                                 </div>

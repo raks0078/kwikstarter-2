@@ -1,5 +1,5 @@
 .projectCard {
-  width: 40%;
+  max-width: 400px;
   background-color: #212121;
   padding: 1rem;
   border-radius: 1rem;
@@ -20,6 +20,7 @@
       align-items: center;
       img {
         width: 80px;
+        border-radius: 50%;
       }
     }
 
@@ -57,7 +58,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 165px;
+        width: 65px;
         background-color: #56481d;
         border-radius: 14px;
         padding: 4px 7px;

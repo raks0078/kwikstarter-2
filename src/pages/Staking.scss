@@ -15,6 +15,9 @@
   }
 
   .navigations {
+    @media (max-width: 600px) {
+      margin-top: 6rem;
+    }
     display: flex;
     justify-content: space-between;
     .nav {

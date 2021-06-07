@@ -13,6 +13,7 @@ import LanguageIcon from "@material-ui/icons/Language";
 import banner_img from "../images/hero-section.png";
 import image_round from "../images/about-us.png";
 import kwikstarter from "../assests/images/kwikstarter-transparent.png";
+import veble from "../assests/images/UseOnDark_icon.png";
 import psp from "../images/psp.jpeg";
 import medium_light from "../images/medium-light.svg";
 import medium from "../images/medium.svg";
@@ -177,7 +178,7 @@ class Homepage extends Component{
             <div className="heading">Upcoming Pools</div>
             <div className="d-flex flex-wrap mt-5">
             {/* <Link to="/featured-pool-next"> */}
-            <Link to="/featured-pool-next/polka" className="card newcard">
+            <Link to="/featured-pool-next" className="card newcard">
                 <div className="square-box">
                   <img src={psp} />
                   Polkasocial
@@ -212,20 +213,20 @@ class Homepage extends Component{
                   >
                     <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                   </svg>
-                  OPEN ON THE 11 JUNE
+                  TBA
                 </div>
               </Link>
             {/* </Link> */}
 
             {/* <Link to="/featured-pool-next"> */}
-            <Link to="/featured-pool-next/veb" className="card">
+            <Link to="/vab-featured" className="card">
                 <div className="square-box">
-                  <img src={kwikstarter} />
-                  TBA
+                  <img src={veble} />
+                  Vabble
                 </div>
                 <div className="total-text">
                   <small>Total Raise</small>
-                  <h3>TBA</h3>
+                  <h3>Vabble</h3>
                 </div>
                 <div className="d-flex block">
                   <ul>
