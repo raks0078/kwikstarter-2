@@ -14,6 +14,7 @@ import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 import { useWalletModalToggle } from "../../state/app/hooks";
 import { useWeb3React } from "@web3-react/core";
 import { shortenAddress } from "utils";
+import { useBalance } from "hooks/useBalance";
 
 export default function Header() {
   // render() {
@@ -30,18 +31,20 @@ export default function Header() {
 
   const openWallet = useWalletModalToggle();
 
-  const { active, account } = useWeb3React();
+  const { account } = useWeb3React();
+
+  const balance = useBalance();
 
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-        <Link to="/" className="navbar-brand">
-        <img src={logoWhite} />
-        </Link>
+          <Link to="/" className="navbar-brand">
+            <img src={logoWhite} />
+          </Link>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav link-nav">
-            <li className="nav-item">
+              <li className="nav-item">
                 <Link to="/featured-pool-next">Pools</Link>
               </li>
               <li className="nav-item">
@@ -66,6 +69,13 @@ export default function Header() {
                 </button>
               </Link>
             </li>
+
+            <li className="nav-item">
+              <button className="button-primary" type="button">
+                {balance ? `${balance.toFixed(4)} BNB` : "--"}
+              </button>
+            </li>
+
             <li className="nav-item">
               <button className="button-primary" onClick={openWallet}>
                 {account ? (
@@ -78,6 +88,7 @@ export default function Header() {
               </button>
             </li>
           </ul>
+
           <button
             className="navbar-toggler button-secondary"
             type="button"

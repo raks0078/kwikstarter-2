@@ -17,6 +17,7 @@ import store from "./state/index";
 import { Provider } from "react-redux";
 import { Web3Provider } from "@ethersproject/providers";
 import { Web3ReactProvider } from "@web3-react/core";
+import Web3ReactManager from "./components/Web3ReactManager";
 import Staking from "pages/Staking";
 
 const StyledDiv = styled.div`
@@ -44,45 +45,44 @@ const App = () => {
           <GlobalStyle />
           <StyledDiv>
             {/* <Router> */}
-              <Particles params={particlesParams} />
-              <div
-                className="wrapper"
-                style={{
-                  backgroundImage: `url(${
-                    theme === "light" ? LightBg : DarkBg
-                  })`,
-                }}
-              >
-                <Header />
+            <Particles params={particlesParams} />
+            <div
+              className="wrapper"
+              style={{
+                backgroundImage: `url(${theme === "light" ? LightBg : DarkBg})`,
+              }}
+            >
+              <Header />
 
-                <Switch>
-                  <Route exact path="/" component={() => <Homepage />} />
-                  <Route
-                    exact
-                    path="/featured-pool-next/:id"
-                    component={() => <FeaturedPoolNext />}
-                  />
-                  <Route
-                    exact
-                    path="/featured-pool-next"
-                    component={() => <FeaturedPoolNext />}
-                  />
+              <Switch>
+                <Route exact path="/" component={() => <Homepage />} />
+                <Route
+                  exact
+                  path="/featured-pool-next/:id"
+                  component={() => <FeaturedPoolNext />}
+                />
+                <Route
+                  exact
+                  path="/featured-pool-next"
+                  component={() => <FeaturedPoolNext />}
+                />
 
-                  <Route
-                    exact
-                    path="/litepaper"
-                    component={() => <Litepaper />}
-                  />
-                  <Route exact path="/projects">
-                    <Projects />
-                  </Route>
-                  <Route exact path="/staking">
+                <Route
+                  exact
+                  path="/litepaper"
+                  component={() => <Litepaper />}
+                />
+                <Route exact path="/projects">
+                  <Projects />
+                </Route>
+                <Route exact path="/staking">
                   <Staking />
                 </Route>
-                </Switch>
-                <Web3Modal />
-                <Footer />
-              </div>
+              </Switch>
+              <Web3Modal />
+              <Web3ReactManager />
+              <Footer />
+            </div>
             {/* </Router> */}
           </StyledDiv>
         </ThemeProvider>
