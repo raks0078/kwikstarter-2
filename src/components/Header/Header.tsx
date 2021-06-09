@@ -71,9 +71,11 @@ export default function Header() {
             </li>
 
             <li className="nav-item">
-              <button className="button-primary" type="button">
-                {balance ? `${balance.toFixed(4)} BNB` : "--"}
-              </button>
+              {account && (
+                <button className="button-primary" type="button">
+                  {balance ? `${balance.toFixed(4)} BNB` : "0 BNB"}
+                </button>
+              )}
             </li>
 
             <li className="nav-item">

@@ -24,11 +24,11 @@ const NETWORK_URLS: {
   [97]: `https://rinkeby.infura.io/v3/${INFURA_KEY}`,
 };
 
-const SUPPORTED_CHAIN_IDS = [56, 97];
+const SUPPORTED_CHAIN_IDS = [56];
 
 export const network = new NetworkConnector({
   urls: NETWORK_URLS,
-  defaultChainId: 97,
+  defaultChainId: 56,
 });
 
 let networkLibrary: Web3Provider | undefined;
@@ -55,12 +55,12 @@ export const binanceWallet = new BscConnector({
 
 export const ledger = new LedgerConnector({
   chainId: 1,
-  url: NETWORK_URLS[97],
+  url: NETWORK_URLS[56],
 });
 
 export const trezor = new TrezorConnector({
-  chainId: 97,
-  url: NETWORK_URLS[97],
+  chainId: 56,
+  url: NETWORK_URLS[56],
   manifestEmail: "admin@kwikstater,org",
   manifestAppUrl: KWIK_APP_URI,
 });
