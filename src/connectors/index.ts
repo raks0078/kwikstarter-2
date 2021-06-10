@@ -17,11 +17,11 @@ const NETWORK_URLS: {
   [97]: `https://data-seed-prebsc-1-s1.binance.org:8545/`,
 };
 
-const SUPPORTED_CHAIN_IDS = [97];
+const SUPPORTED_CHAIN_IDS = [56];
 
 export const network = new NetworkConnector({
   urls: NETWORK_URLS,
-  defaultChainId: 97,
+  defaultChainId: 56,
 });
 
 let networkLibrary: Web3Provider | undefined;
@@ -36,7 +36,7 @@ export const injected = new InjectedConnector({
 
 export const trustwallet = new WalletConnectConnector({
   supportedChainIds: SUPPORTED_CHAIN_IDS,
-  infuraId: NETWORK_URLS[97],
+  infuraId: NETWORK_URLS[56],
   bridge: WALLETCONNECT_BRIDGE_URL,
   qrcode: true,
   pollingInterval: 15000,
@@ -47,13 +47,13 @@ export const binanceWallet = new BscConnector({
 });
 
 export const ledger = new LedgerConnector({
-  chainId: 97,
-  url: NETWORK_URLS[97],
+  chainId: 56,
+  url: NETWORK_URLS[56],
 });
 
 export const trezor = new TrezorConnector({
-  chainId: 97,
-  url: NETWORK_URLS[97],
+  chainId: 56,
+  url: NETWORK_URLS[56],
   manifestEmail: "admin@kwikstater,org",
   manifestAppUrl: KWIK_APP_URI,
 });
