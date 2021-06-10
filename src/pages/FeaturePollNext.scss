@@ -1,4 +1,7 @@
 .featuredpoolnext {
+  @media (max-width: 600px) {
+    margin-top: 7rem;
+  }
   .featured-pools {
     border-radius: 15px;
     padding: 50px;
@@ -8,6 +11,7 @@
     @media (max-width: 450px) {
       padding: 20px;
     }
+    z-index: -2;
 
     .card {
       border-width: 1px;
@@ -364,6 +368,9 @@
       }
     }
     .d-flex {
+      @media (max-width: 600px) {
+        display: block;
+      }
       div {
         margin-bottom: 2rem;
       }
@@ -385,6 +392,10 @@
     position: relative;
     margin-bottom: 7rem;
     width: 410px;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
 
     .heading {
       background-color: #00afff;
@@ -448,8 +459,11 @@
     position: relative;
     margin-bottom: 7rem;
     margin-left: 20px;
-    width: calc(100% - 430px);
-
+    // width: calc(100% - 430px);
+    width: 90%;
+    @media (max-width: 600px) {
+      width: 290px;
+    }
     .heading {
       background-color: #00afff;
       border-radius: 50px 0 0 50px;
@@ -475,5 +489,13 @@
       display: flex;
       align-items: center;
     }
+  }
+}
+
+.boxing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
   }
 }

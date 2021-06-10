@@ -19,12 +19,6 @@ import {
 
 
 class FeaturedPoolNext extends Component {
-  // constructor(props:any) {
-  //   super(props); 
-    // this.state = {
-    //     instructorID : props.match.params.id
-    // };
-  // }
   render() {
     
     console.log('as',this.props);
@@ -41,7 +35,7 @@ class FeaturedPoolNext extends Component {
                     <small>Presale Rate = $0.18</small>
                   </span>
                 </div>
-                <small>Listing: June 11, 2021 </small>
+                <small>TBA </small>
                 {/* <small>{this.props.match.params.id}</small> */}
               </div>
               <div className="d-flex align-items-center justify-content-between">
@@ -114,7 +108,7 @@ class FeaturedPoolNext extends Component {
                 >
                   <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                 </svg>
-                Open in 11 June
+                TBA
               </div>
             </div>
           </div>
@@ -255,7 +249,7 @@ class FeaturedPoolNext extends Component {
             </div>
           </div>
         </div>
-        <div className="container d-flex">
+        <div className="container boxing">
           <div className="audit">
             <div className="heading">Audit</div>
             <div className="d-flex flex-column">

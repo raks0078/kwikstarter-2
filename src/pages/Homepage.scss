@@ -1,4 +1,7 @@
 .homepage {
+  @media (max-width: 600px) {
+    margin-top: 6rem;
+  }
   .hero-section {
     padding: 20px 0;
     display: flex;
@@ -52,13 +55,13 @@
 
         .button-primary,
         .button-secondary {
-          @media (max-width: 420px) {
+          @media (max-width: 600px) {
             width: 9rem;
           }
         }
 
         .button-secondary {
-          @media (max-width: 420px) {
+          @media (max-width: 600px) {
             margin-left: 5px;
           }
         }
