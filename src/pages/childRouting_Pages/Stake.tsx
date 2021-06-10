@@ -7,10 +7,11 @@ import AssignmentIndIcon from "@material-ui/icons/AssignmentInd";
 import DoneOutlineIcon from "@material-ui/icons/DoneOutline";
 import { useKwikBalance, useBalance } from "../../hooks/useBalance";
 import { useApprove, useStake } from "../../hooks/useApprove";
-
+import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import { useStakeData } from "hooks/useStakeData";
 
 function Stake() {
   const kwikBalance = useKwikBalance();
@@ -19,9 +20,11 @@ function Stake() {
   const { approvalCallback, isApproved } = useApprove();
   const { stakeCallback, isStaked } = useStake();
 
+  const stakingDetails = useStakeData();
+
   return (
     <div className="stake">
-      <h2>Stake your kwikstarter</h2>
+      <h2>Stake your kwikswap</h2>
       <div className="stackIcons">
         <div className="iconBox">
           <div className="icon">
@@ -75,7 +78,7 @@ function Stake() {
           </div>
           <div className="box_card">
             <div className="card_header">
-              <h4>kwikstarter available to deposit</h4>
+              <h4>kwikswap available to deposit</h4>
               <div className="card_circle"></div>
             </div>
             <p>Current Balance: {kwikBalance ? kwikBalance : "--"}</p>
@@ -96,8 +99,8 @@ function Stake() {
               <div className="card_circle"></div>
             </div>
             <p>
-              You cannot stake if you have an active kwikstarter
-              unstake/withdrawal request
+              You cannot stake if you have an active kwikswap unstake/withdrawal
+              request
             </p>
           </div>
         </div>
@@ -105,7 +108,7 @@ function Stake() {
         <div className="checkBox">
           <input type="checkbox" name="" value="" />
           <p>
-            I have read the <a href="">Terms and Conditions</a>
+            I have read the <Link to="/terms">Terms and Conditions</Link>
           </p>
         </div>
       </div>

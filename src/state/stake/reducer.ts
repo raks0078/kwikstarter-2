@@ -9,9 +9,9 @@ export interface IStake {
 }
 
 const initialStake: IStake = {
-  stakeAmount: 0,
+  stakeAmount: 1000,
   activePlanName: undefined,
-  poolWeight: 0,
+  poolWeight: 30,
   poolSrc: undefined,
 };
 

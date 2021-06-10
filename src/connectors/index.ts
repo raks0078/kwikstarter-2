@@ -8,27 +8,20 @@ import { NetworkConnector } from "./NetworkConnector";
 import { BscConnector } from "@binance-chain/bsc-connector";
 import KWIK_APP_URI from "../assests/images/kwikstarter-transparent.png";
 
-const INFURA_KEY = process.env.REACT_APP_INFURA_KEY;
-const WALLETCONNECT_BRIDGE_URL = process.env.REACT_APP_WALLETCONNECT_BRIDGE_URL;
-
-if (typeof INFURA_KEY === "undefined") {
-  throw new Error(
-    `REACT_APP_INFURA_KEY must be a defined environment variable`
-  );
-}
+const WALLETCONNECT_BRIDGE_URL = "https://bridge.walletconnect.org";
 
 const NETWORK_URLS: {
   [chainId: number]: string;
 } = {
-  [56]: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
-  [97]: `https://rinkeby.infura.io/v3/${INFURA_KEY}`,
+  [56]: `https://bsc-dataseed.binance.org/`,
+  [97]: `https://data-seed-prebsc-1-s1.binance.org:8545/`,
 };
 
-const SUPPORTED_CHAIN_IDS = [56];
+const SUPPORTED_CHAIN_IDS = [97];
 
 export const network = new NetworkConnector({
   urls: NETWORK_URLS,
-  defaultChainId: 56,
+  defaultChainId: 97,
 });
 
 let networkLibrary: Web3Provider | undefined;
@@ -43,7 +36,7 @@ export const injected = new InjectedConnector({
 
 export const trustwallet = new WalletConnectConnector({
   supportedChainIds: SUPPORTED_CHAIN_IDS,
-  infuraId: INFURA_KEY,
+  infuraId: NETWORK_URLS[97],
   bridge: WALLETCONNECT_BRIDGE_URL,
   qrcode: true,
   pollingInterval: 15000,
@@ -54,13 +47,13 @@ export const binanceWallet = new BscConnector({
 });
 
 export const ledger = new LedgerConnector({
-  chainId: 1,
-  url: NETWORK_URLS[56],
+  chainId: 97,
+  url: NETWORK_URLS[97],
 });
 
 export const trezor = new TrezorConnector({
-  chainId: 56,
-  url: NETWORK_URLS[56],
+  chainId: 97,
+  url: NETWORK_URLS[97],
   manifestEmail: "admin@kwikstater,org",
   manifestAppUrl: KWIK_APP_URI,
 });

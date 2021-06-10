@@ -194,7 +194,8 @@ const Homepage = () => {
                     <span>$150k</span>
                   </li>
                   <li>
-                    <small>Max Allocation</small>z<span>$600k</span>
+                    <small>Max Allocation</small>
+                    <span>$600k</span>
                   </li>
                   <li>
                     <small>Access</small>

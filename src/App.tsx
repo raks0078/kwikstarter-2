@@ -22,6 +22,7 @@ import { Web3Provider } from "@ethersproject/providers";
 import { Web3ReactProvider } from "@web3-react/core";
 import Web3ReactManager from "./components/Web3ReactManager";
 import Staking from "pages/Staking";
+import TopBar from "components/TopBar/TopBar";
 
 const StyledDiv = styled.div`
   color: ${(props) => props.theme.fontColor};
@@ -48,52 +49,44 @@ const App = () => {
           <GlobalStyle />
           <StyledDiv>
             {/* <Router> */}
-              <Particles params={particlesParams} />
-              <div
-                className="wrapper"
-                style={{
-                  backgroundImage: `url(${
-                    theme === "light" ? LightBg : DarkBg
-                  })`,
-                }}
-              >
-                <Header /> 
-                <Switch>
-                  <Route exact path="/" component={() => <Homepage />} />
-                  <Route
-                    exact
-                    path="/featured-pool-next/:id"
-                    component={() => <FeaturedPoolNext />}
-                  />
-                  <Route
-                    exact
-                    path="/featured-pool-next"
-                    component={() => <FeaturedPoolNext />}
-                  />
-                  <Route
-                    exact
-                    path="/vab-featured"
-                    component={() => <VabFeatured />}
-                  />
-                  <Route
-                    exact
-                    path="/litepaper"
-                    component={() => <Litepaper />}
-                  />
-                  <Route
-                    exact
-                    path="/policy"
-                    component={() => <Privacy/>}
-                  />
-                  <Route
-                    exact
-                    path="/terms"
-                    component={() => <Terms />}
-                  />
-                  <Route exact path="/projects">
-                    <Projects />
-                  </Route>
-                  <Route exact path="/staking">
+            <Particles params={particlesParams} />
+
+            <div
+              className="wrapper"
+              style={{
+                backgroundImage: `url(${theme === "light" ? LightBg : DarkBg})`,
+              }}
+            >
+              <TopBar />
+              <Header />
+              <Switch>
+                <Route exact path="/" component={() => <Homepage />} />
+                <Route
+                  exact
+                  path="/featured-pool-next/:id"
+                  component={() => <FeaturedPoolNext />}
+                />
+                <Route
+                  exact
+                  path="/featured-pool-next"
+                  component={() => <FeaturedPoolNext />}
+                />
+                <Route
+                  exact
+                  path="/vab-featured"
+                  component={() => <VabFeatured />}
+                />
+                <Route
+                  exact
+                  path="/litepaper"
+                  component={() => <Litepaper />}
+                />
+                <Route exact path="/policy" component={() => <Privacy />} />
+                <Route exact path="/terms" component={() => <Terms />} />
+                <Route exact path="/projects">
+                  <Projects />
+                </Route>
+                <Route exact path="/staking">
                   <Staking />
                 </Route>
               </Switch>
