@@ -47,35 +47,35 @@ function Withdraw() {
               <h4>Connect with MetaMask</h4>
               <div className="card_circle"></div>
             </div>
-            <p>If not adh asnaksnd saidakdbaid kada dad a da djab</p>
+            <p>If not connected, click the "Connect Wallet" button in the top right corner</p>
           </div>
           <div className="box_card">
             <div className="card_header">
-              <h4>Connect with MetaMask</h4>
+              <h4>30 day waiting period elapsed</h4>
               <div className="card_circle"></div>
             </div>
-            <p>If not adh asnaksnd saidakdbaid kada dad a da djab</p>
+            {/* <p>If not adh asnaksnd saidakdbaid kada dad a da djab</p> */}
           </div>
           <div className="box_card">
             <div className="card_header">
-              <h4>Connect with MetaMask</h4>
+              <h4>You have Unstaked Your Kwikswap</h4>
               <div className="card_circle"></div>
             </div>
-            <p>If not adh asnaksnd saidakdbaid kada dad a da djab</p>
+            {/* <p>If not adh asnaksnd saidakdbaid kada dad a da djab</p> */}
           </div>
           <div className="box_card">
             <div className="card_header">
-              <h4>Connect with MetaMask</h4>
+              <h4>Approve and Unstake</h4>
               <div className="card_circle"></div>
             </div>
-            <p>If not adh asnaksnd saidakdbaid kada dad a da djab</p>
+            {/* <p>If not adh asnaksnd saidakdbaid kada dad a da djab</p> */}
           </div>
         </div>
 
         <div className="checkBox">
           <input type="checkbox" name="" value="" />
           <p>
-            I have read the <a href="">Terms and Conditions</a>
+            I have read the <a href="/terms">Terms and Conditions</a>
           </p>
         </div>
       </div>

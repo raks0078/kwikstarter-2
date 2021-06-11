@@ -66,7 +66,7 @@ function Staking() {
                   <h4>{`--`}</h4>
                 </div>
                 <div className="info_box">
-                  <h4>Total KickStater Staked</h4>
+                  <h4>Total Kwikswap Staked</h4>
                   <hr />
                   <h4>{totalStaked ? totalStaked : 0}</h4>
                 </div>
