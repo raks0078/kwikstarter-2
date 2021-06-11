@@ -8,6 +8,7 @@ import UnStake from "./childRouting_Pages/UnStake";
 import Withdraw from "./childRouting_Pages/Withdraw";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { useStaking } from "../hooks/useStaking";
+import { useStakeData } from "../hooks/useStakeData";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
 function Staking() {
   const classes = useStyles();
   const totalStaked = useStaking();
+  const totalStakedData = useStakeData();
 
   return (
     <Router>
@@ -66,7 +68,7 @@ function Staking() {
                   <h4>{`--`}</h4>
                 </div>
                 <div className="info_box">
-                  <h4>Total KickStater Staked</h4>
+                  <h4>Total Kwikswap Staked</h4>
                   <hr />
                   <h4>{totalStaked ? totalStaked : 0}</h4>
                 </div>
@@ -95,15 +97,15 @@ function Staking() {
             <div className="input_box">
               <h4>Staked</h4>
               <hr />
-              <h3>
-                <input type="text" />
-              </h3>
+              {/* <h3> */}
+              <h3>{totalStaked ? totalStaked : 0}</h3>
+              {/* </h3> */}
             </div>
             <div className="input_box">
               <h4>Unstaked</h4>
               <hr />
               <h3>
-                <input type="text" />
+                0.0001
               </h3>
             </div>
             <div className="input_box">
