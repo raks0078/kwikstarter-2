@@ -63,7 +63,7 @@ const Modal = ({ isOpen, close, heading, children }: IModalProps) => {
       <ModalWrapper>
         <DialogTitle id="customized-dialog-title">{heading}</DialogTitle>
         <IconButton>
-          <Close />
+          <Close onClick={close} />
         </IconButton>
       </ModalWrapper>
 

@@ -53,10 +53,10 @@ function UnStake() {
       <div className="warning_Box">
         <ReportProblemIcon className="warning_Icon" />
         <p>
-          After Unstaking, you must wait 7 days before you can withdraw your
+          After Unstaking, you must wait 30 days before you can withdraw your
           kwikswap and rewards. <br />
           The amount of tokens you Unstake will not count towards your tier
-          level for upcoming <a href="">Projects</a>.
+          level for upcoming <a href="/projects">Projects</a>.
         </p>
       </div>
 

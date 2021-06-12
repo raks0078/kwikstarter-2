@@ -48,9 +48,9 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
   },
   BINANCE_WALLET: {
     connector: binanceWallet,
-    name: "Binance Smart Chain Wallet",
+    name: "BSC Wallet",
     iconURL: BINANCE_ICON_URL,
-    description: "Using Binance Smart Chain Wallet",
+    description: "Using BSC Wallet",
     href: null,
     color: "#315CF5",
   },

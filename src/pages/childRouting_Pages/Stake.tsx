@@ -108,7 +108,8 @@ function Stake() {
         <div className="checkBox">
           <input type="checkbox" name="" value="" />
           <p>
-            I have read the <Link to="/terms">Terms and Conditions</Link>
+          {/* I have read the <a href="https://kwikstarter.org/terms#/terms">Terms and Conditions</a> */}
+          I have read the <a href="/terms">Terms and Conditions</a>
           </p>
         </div>
       </div>

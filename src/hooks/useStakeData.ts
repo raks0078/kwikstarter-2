@@ -52,6 +52,7 @@ export const getStakeIds = async (
 
 export const useStakeData = () => {
   const [stakingDetails, setStakingDetails] = useState<StakeData | null>(null);
+  const [total, setTotal] = useState();
   const stakingInstance = useKwikStake();
 
   const { account } = useWeb3React();
@@ -67,7 +68,10 @@ export const useStakeData = () => {
       });
 
       const totalStakedEver = _.sum(amounts);
+      setTotal(totalStakedEver);
     };
     fetchStakingDetails();
   }, [stakingInstance, account]);
+
+  return total;
 };
