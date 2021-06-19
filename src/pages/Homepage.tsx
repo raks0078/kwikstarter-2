@@ -232,15 +232,15 @@ const Homepage = () => {
                 <ul>
                   <li>
                     <small>Min Allocation</small>
-                    <span>TBA</span>
+                    <span>$200</span>
                   </li>
                   <li>
                     <small>Max Allocation</small>
-                    <span>TBA</span>
+                    <span>$400000</span>
                   </li>
                   <li>
                     <small>Access</small>
-                    <span>TBA</span>
+                    <span>Private</span>
                   </li>
                 </ul>
               </div>
@@ -254,7 +254,7 @@ const Homepage = () => {
                 >
                   <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                 </svg>
-                TBA
+                20/06/2021 2pm UTC
               </div>
             </Link>
             {/* </Link> */}
@@ -668,7 +668,7 @@ const Homepage = () => {
           <div className="d-flex justify-content-center">
             <div className="circle-animation-wrap">
               <a
-                href="https://marketing@kwikswap.org"
+                href="mailto: marketing@kwikswap.org"
                 target="_blank"
                 rel="noreferrer"
                 className="circle-animation"
@@ -677,10 +677,20 @@ const Homepage = () => {
               </a>
             </div>
             <div className="circle-animation-wrap">
+              <a
+                href="https://discord.gg/9xN93z7C"
+                target="_blank"
+                rel="noreferrer"
+                className="circle-animation"
+              >
+                <i className="fab fa-discord"></i>
+              </a>
+            </div>
+            {/* <div className="circle-animation-wrap">
               <div className="circle-animation">
                 <i className="fab fa-discord"></i>
               </div>
-            </div>
+            </div> */}
             <div className="circle-animation-wrap">
               <a
                 href="https://t.me/kwikswapdex"

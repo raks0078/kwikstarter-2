@@ -52,7 +52,7 @@ function Withdraw() {
           </div>
           <div className="box_card">
             <div className="card_header">
-              <h4>30 day waiting period elapsedonnect with MetaMask</h4>
+              <h4>30 day waiting period</h4>
               <div className="card_circle"></div>
             </div>
           </div>

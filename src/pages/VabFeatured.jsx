@@ -10,6 +10,7 @@ import "./FeaturePollNext.scss";
 import kwikstarter from "../assests/images/kwikstarter-transparent.png";
 import psp from "../images/psp.jpeg";
 import veb from "../images/UseOnDark_icon.png";
+// import veb from "../images/vabble-icon.png";
 
 import {
   BrowserRouter as Router,
@@ -22,7 +23,6 @@ import {
 class VabFeatured extends Component {
   render() {
     
-    console.log('as',this.props);
     return (
       <div className="featuredpoolnext">
         <div className="container">
@@ -33,15 +33,18 @@ class VabFeatured extends Component {
                   <img src={veb} />
                   <span>
                   Vabble
-                    <small>Presale Rate = $0.18</small>
+                    <small>Presale Rate = $0.016</small>
                   </span>
                 </div>
-                <small>TBA </small>
+                <div className="d-flex flex-column">
+                <small>20/06/2021 </small>
+                <small>start 2pm UTC</small>
+                </div>
                 {/* <small>{this.props.match.params.id}</small> */}
               </div>
               <div className="d-flex align-items-center justify-content-between">
                 <div className="total-text">
-                  <small>Maximum 1 BNB</small>
+                  <small></small>
                   <h3>0 BNB Raised</h3>
                 </div>
                 <div className="participants-chip">0 Participants</div>
@@ -67,35 +70,35 @@ class VabFeatured extends Component {
                 <ul>
                   <li>
                     <small>Softcap</small>
-                    <span>TBA</span>
+                    <span>$50,000</span>
                   </li>
                   <li>
                     <small>Min Per Wallet</small>
-                    <span>TBA</span>
+                    <span>$200</span>
                   </li>
                   <li>
                     <small>Presale Rate</small>
-                    <span>TBA</span>
+                    <span>$0.016</span>
                   </li>
                   <li>
                     <small>Liquidity Allocation</small>
-                    <span>TBA</span>
+                    <span>$480,000</span>
                   </li>
                   <li>
-                    <small>Headcap</small>
-                    <span>TBA</span>
+                    <small>Hardcap</small>
+                    <span>$400,000</span>
                   </li>
                   <li>
                     <small>Max Per Wallet</small>
-                    <span>TBA</span>
+                    <span>$12,000</span>
                   </li>
                   <li>
-                    <small>PancakeSwap Listing Rate</small>
-                    <span>TBA</span>
+                    <small>Uniswap Listing Rate</small>
+                    <span>$0.016</span>
                   </li>
                   <li>
                     <small>Liquidity Lock Duration</small>
-                    <span>TBA</span>
+                    <span>18Months</span>
                   </li>
                 </ul>
               </div>
@@ -137,7 +140,7 @@ class VabFeatured extends Component {
               </span>
               <span>
                 <small>Buy Tokens</small>
-                <h3>1 Token = $0.18</h3>
+                <h3>1 Token = $0.016</h3>
                 <button className="button-primary">Buy</button>
               </span>
               {/* <span>

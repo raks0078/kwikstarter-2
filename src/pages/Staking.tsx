@@ -114,7 +114,7 @@ function Staking() {
               </h3>
               <div className="buttons">
                 <Button variant="contained" color="primary">
-                  Stake
+                  Unstake
                 </Button>
                 <Button variant="contained" color="primary">
                   Withdraw
