@@ -8,16 +8,7 @@ export default function Projects() {
       <div className="projectsOpen">
         <h1>PROJECTS OPEN NOW</h1>
         <div className="projectCards">
-          <ProjectCard linking={{
-            medium:"https://medium.com/@polkasocial/about",
-            twiiter:"https://twitter.com/polkasocial",
-            telegrame:"https://t.me/polkasocial",
-            Language:"https://polkasocial.org/",
-            name:"Polkasocial",
-            src:"../../assests/images/kwikstarter-transparent.png",
-            link:'/featured-pool-next',
-            }}
-          />
+          
           <ProjectCard linking={{
             medium:"https://medium.com/@vabble",
             twiiter:"https://twitter.com/VabbleApp",
@@ -33,6 +24,18 @@ export default function Projects() {
       </div>
       <div className="projectsComming">
         <h1>PROJECTS COMING SOON</h1>
+        <div className="projectCards">
+        <ProjectCard linking={{
+            medium:"https://medium.com/@polkasocial/about",
+            twiiter:"https://twitter.com/polkasocial",
+            telegrame:"https://t.me/polkasocial",
+            Language:"https://polkasocial.org/",
+            name:"Polkasocial",
+            src:"../../assests/images/kwikstarter-transparent.png",
+            link:'/featured-pool-next',
+            }}
+          />
+          </div>
       </div>
       <div className="projectsClosed">
         <h1>PROJECTS CLOSED</h1>
