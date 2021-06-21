@@ -81,7 +81,7 @@ class FeaturedPoolNext extends Component {
                     <span>40%</span>
                   </li>
                   <li>
-                    <small>Headcap</small>
+                    <small>Hardcap</small>
                     <span>$ 600K</span>
                   </li>
                   <li>

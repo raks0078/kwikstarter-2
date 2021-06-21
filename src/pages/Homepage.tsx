@@ -236,7 +236,7 @@ const Homepage = () => {
                   </li>
                   <li>
                     <small>Max Allocation</small>
-                    <span>$400000</span>
+                    <span>$12000</span>
                   </li>
                   <li>
                     <small>Access</small>
@@ -254,7 +254,7 @@ const Homepage = () => {
                 >
                   <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                 </svg>
-                20/06/2021 2pm UTC
+                22/06/2021 2pm UTC
               </div>
             </Link>
             {/* </Link> */}

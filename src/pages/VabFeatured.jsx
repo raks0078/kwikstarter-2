@@ -37,8 +37,8 @@ class VabFeatured extends Component {
                   </span>
                 </div>
                 <div className="d-flex flex-column">
-                <small>21/06/2021 </small>
-                <small>start 2pm UTC</small>
+                <small>22/06/2021 </small>
+                <small>start 2PM UTC</small>
                 </div>
                 {/* <small>{this.props.match.params.id}</small> */}
               </div>
@@ -112,7 +112,7 @@ class VabFeatured extends Component {
                 >
                   <circle cx="4" cy="4" r="4" fill="#010415"></circle>
                 </svg>
-                Till 25/06/2021
+                Till 24/06/2021 11am UTC
               </div>
             </div>
           </div>

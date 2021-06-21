@@ -51,11 +51,11 @@ function ProjectCard(props) {
         <div className="moreInfo">
           <div className="info">
             <p>Swap Rate</p>
-            <h1>$0.016</h1>
+            <h1>$0.18</h1>
           </div>
           <div className="info">
             <p>Cap</p>
-            <h1>$400k</h1>
+            <h1>$600k</h1>
           </div>
           <div className="info">
             <p>Access</p>
@@ -67,7 +67,7 @@ function ProjectCard(props) {
           <div className="bar"></div>
           <div className="percentage">
             <h4>0.00%</h4>
-            <h4>0.0000/1250</h4>
+            <h4>0.0000/0.00</h4>
           </div>
         </div>
       </div>
